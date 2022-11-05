@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="title-box">
+            <h1 class="title-box__title" >Shop now</h1>
+        </div>
+        <nav class="filter">
+            <div class="filter__column filter__column--left">
+                <button class="filter__button filter__button--all">Todos</button>
+                <button class="filter__button filter__button--hortifruti">Hortifruti</button>
+                <button class="filter__button filter__button--pao">Panificadora</button>
+                <button class="filter__button filter__button--lat">Laticínios</button>
+            </div>
+            <div class="filter__column filter__column--right">
+                <input type="text" placeholder="Pesquisar por" class="filter__input">  
+
+            </div>          
+        </nav>
+    </header>
+    
+    <main>
+        <div class="produtos">
+            <ul class ='produto__lista'>
+
+                
+            </ul>
+        </div>
+        <div class="carrinho">
+            <div class="carrinho__box-title">
+                <img class="carrinho__icon" src="./src/img/car.png" alt="">
+                <span class="carrinho__title">carrinho</span>
+            </div>
+            <div class="carrinho__vazio">
+                <img class="carrinho-vazio__imagem"src="./src/img/shopping-bag.png" alt="">
+                <p class="carrinho-vazio__texto ">Por enquanto não temos produtos no carrinho</p>
+            </div>
+            <ul class="carrinho__lista">
+            </ul>
+            <div class="carrinho__contagem">
+                <div class="carrinho__box">
+                    <span>Quantidade</span>
+                    <span class="quantidade"></span>
+                </div>
+                <div class="carrinho__box">
+                    <span>Total</span>
+                    <span class="valorTotal"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.title-box{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.25); 
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.25);
+}
+.title-box__title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.filter{
+    margin-left: 146px;
+    margin-right: 146px;
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+}
+
+.filter__column{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 9px;
+}
+
+.filter__column--right{
+    margin-left: 0;
+    width: 40%;
+}
+.filter__button{
+    margin-top: 39px;
+    background-color: #F3FBF9;
+    border: 1.5px solid #DCEAE6;
+    border-radius: 8px;
+    color: #12B886;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    height: max-content;
+    padding: 14px 26px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.filter__button:hover{
+    background-color: #12B886;
+    color: white;
+}
+
+.filter__input{
+    width: 100%;
+    background-color: #F1F3F5;
+    color: #515252;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    height: max-content;
+    margin-top: 39px;
+    padding: 14px 26px;
+
+}
+.filter__button--submit{
+    background-color: #12B886;
+    background-image: url(/src/img/search.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+    transition: 0.3s;
+    padding: 13px 24px;
+}
+.filter__button--submit:hover{
+    background-color: #009c6d;
+}
+
+main{
+    display: flex;
+    margin-left: 146px;
+    margin-right: 100px;
+    max-width: 100%;
+    height: 100%;
+
+}
+.produtos{
+    min-width: 78%;
+    max-width: 78%;
+}
+.produto__lista{
+    display: flex;
+    gap: 27px;
+    flex-wrap: wrap;
+}
+.produto__item{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 60px;
+    width: 260px;
+    height: 330px;
+    border: 1px solid transparent;
+    transition: 0.1s;
+
+}
+.produto__item:hover{
+    border: 1px solid #12B886;
+    border-radius: 8px;
+}
+
+.produto__imagem{
+    width: 100%;
+    height: 175px;
+    border-radius: 8px;
+}
+.produto__nome{
+    margin-top: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.produto__section{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #868E96;
+}
+.produto__nutrientes{
+    list-style:decimal;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #868E96;
+    line-height: 1.2;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto__price{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+
+.produto__botao--comprar{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3FBF9;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1.5px solid #E8F7F3;
+    border-radius: 8px;
+    color: #12B886;
+    padding: 5px 8px 5px 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.produto__botao--comprar:hover{
+    background-color: #12B886;
+    color: white;
+}
+
+.carrinho{
+    width: 100%;
+    height: 320px;
+    background-color: #F8F9FA;
+    margin-top: 60px;
+    
+}
+.carrinho__box-title{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    background-color: #12B886;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+
+}
+.carrinho__title{
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+}
+.carrinho__vazio{
+    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: #868E96;
+    font-weight: 500;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.carrinho__remover-item{
+    width: 20px;
+}
+
+.carrinho-vazio__texto{
+    text-align: center;
+    padding: 0 5px;
+}
+
+
+
+.carrinho__lista{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 270px;
+    overflow: auto;
+}
+.carrinho__item{
+    display: flex;
+    margin-top: 3px;
+
+    width: 100%;
+    height: 70px;
+
+}
+.carrinho__column-left{
+    display: flex;
+    gap: 5px;
+    width: 85%;
+}
+.carrinho__item-detalhes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.carrinho__item-name{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.carrinho__item-section{
+    color: #868E96;
+    font-size: 0.80rem;
+}
+.carrinho__item-price{
+    font-weight: 600;
+    font-size: 0.80rem;
+}
+
+.carrinho__item-image{
+
+    padding: 2px;
+    width:  65px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.carrinho__column-right{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.carrinho__contagem{
+    background-color: #8f8f8f9c;
+    width: 100%;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.carrinho__box{
+    padding: 0 5px;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 720px) {
+
+    body, main, header, .filter, .filter__column{
+        margin: 0;
+        padding: 0;
+        width:  100%;
+    }
+    .title-box{
+        height: 3rem;
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: 0 0 0 0;
+    }
+    .filter{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: max-content;
+
+    }
+    .filter__column{
+        flex-wrap: nowrap;
+    }
+
+    .filter__column--left{
+        overflow: auto;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0.4rem;
+    }
+
+    .filter__column--right{
+        gap: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .filter__button{
+
+        margin-top: 15px;
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+    .filter__input{
+        margin-top: 15px; 
+        width: 50%;
+
+    }
+
+    /* MAIN */
+
+main{
+
+
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+}
+.produtos{
+    display: flex;
+    min-width:  100%;
+    max-width: 100%;
+    width: 320px;
+    padding: 0;
+    margin: 0;
+}
+.produto__lista{
+
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+.produto__item{
+    min-width: 80%;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+
+    height: max-content;
+}
+.produto__imagem{
+    height: 175px;
+    width: 100%;
+}
+.produto__section{
+    margin-top: 10px;
+}
+.produto__nutrientes{
+    display: none;
+}
+.space-between{
+    margin-top: 1px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.produto__price{
+
+    font-size: 1rem; 
+}
+.produto__botao--comprar{
+
+    font-size: 1rem;
+}
+
+.carrinho{
+    margin: 15px;
+    
+    width: 320px;
+    min-width: 100%;
+    max-width: 100vw;
+    margin-bottom: 0;
+}
+
+
+
+
+}
+
+
+
+
+
+.display-none{
+    display: none !important;
+    background-color: white !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=IBM+Plex+Sans:wght@600&family=Inter&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,500;1,600;1,700&display=swap');

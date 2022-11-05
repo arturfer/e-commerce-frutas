@@ -1,4 +1,5 @@
-# Projeto para fins educativos
+# e commerce-frutas
+
 
 ## Introdução
 
